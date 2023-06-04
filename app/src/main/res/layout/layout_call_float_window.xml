@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_flaot_window_bg">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/float_head_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        app:shapeAppearance="@style/circleStyle"
+        android:src="@drawable/head"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/top_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/float_head_iv"
+        android:text="通话中"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/float_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_tv"
+        android:layout_alignStart="@+id/top_tv"
+        android:text="00:00"
+        android:textColor="@color/alpha_60_white"
+        android:textSize="11dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+</RelativeLayout>
